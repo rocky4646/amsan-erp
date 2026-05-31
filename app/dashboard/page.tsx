@@ -28,10 +28,8 @@ export default async function DashboardPage() {
           <MargeChart data={budgetData} />
         </div>
 
-        <RecentTransactions
-          depenses={depenses}
-          factures={factures}
-        />
+<RecentTransactions depenses={depenses as any} factures={factures as any} />
+
       </div>
     </AppShell>
   );

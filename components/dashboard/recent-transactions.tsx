@@ -25,7 +25,7 @@ interface RecentTransactionsProps {
 
 export function RecentTransactions({ depenses, factures }: RecentTransactionsProps) {
   const combined = [
-    ...depenses.slice(0, 3).map((d) => ({
+   ...(depenses?.slice(0, 3) || []).map((d) => ({
       id: d.id,
       label: d.description || d.categorie?.nom || "Dépense",
       montant: -d.montant_ttc,

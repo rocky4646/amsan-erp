@@ -6,13 +6,13 @@ import { cn } from "@/lib/utils";
 import { NAV_ITEMS, COMPANY_NAME, SIDEBAR_WIDTH } from "@/lib/constants";
 import {
   LayoutDashboard, HardHat, ClipboardCheck, Users, ShoppingCart,
-  FileInvoice, Warehouse, Tractor, ChevronLeft,
+  Receipt, Warehouse, Tractor, ChevronLeft,
 } from "lucide-react";
 import { useState } from "react";
 
 const iconMap: Record<string, React.ElementType> = {
   LayoutDashboard, HardHat, ClipboardCheck, Users, ShoppingCart,
-  FileInvoice, Warehouse, Tractor,
+  Receipt, Warehouse, Tractor,
 };
 
 export function Sidebar() {
